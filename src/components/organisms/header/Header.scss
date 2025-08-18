@@ -1,0 +1,50 @@
+@import '../../../styles/variables';
+
+header {
+  margin: 0 80px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 32px;
+  border-bottom: 1px solid $border;
+}
+.benefits {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+p {
+  display: flex;
+  gap: 4px;
+}
+.icons-list {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  padding: 0;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.categories {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: uppercase;
+  height: 40px;
+  box-shadow: 0 8px 16px 0 rgba(57, 48, 19, 0.12);
+
+  .sub {
+    display: flex;
+    gap: 12px;
+  }
+}

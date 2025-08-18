@@ -1,0 +1,47 @@
+@import '../../../styles/variables';
+
+.btn {
+  border: none;
+  &--banner {
+    background-color: $yellow;
+    color: $purple;
+    height: 50px;
+    width: 206px;
+    text-transform: initial;
+    padding: 7px 49px;
+    border-radius: 5px;
+    flex-shrink: 0;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+  }
+  &--card {
+    background-color: $blue;
+    width: 275.852px;
+    height: 44px;
+    flex-shrink: 0;
+    color: $white;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  &--body {
+    width: 144.693px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background-color: $yellow;
+    color: $purple;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+  }
+}

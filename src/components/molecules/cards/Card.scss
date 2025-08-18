@@ -1,0 +1,77 @@
+@import '../../../styles/variables';
+
+.card {
+  border-radius: 12px;
+  padding: 16px;
+  background: $white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+
+  &__image img {
+    flex-shrink: 0;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  &__content {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__actions {
+    margin-top: 12px;
+  }
+
+  &--white {
+    background: $white;
+  }
+
+  &--gray {
+    background: $bg-card;
+  }
+}
+
+.card--default {
+  max-width: 300px;
+}
+
+.card--product {
+  border: 2px solid $blue;
+}
+
+.card--banner {
+  display: flex;
+  align-items: center;
+  background: $light-gray;
+}
+
+.card--categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 128px;
+  height: 128px;
+  flex-shrink: 0;
+  padding: 0;
+  border-radius: 10px;
+
+  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.22);
+}
+
+.card--partners {
+  width: 634px;
+  height: 350px;
+  border-radius: 20px;
+  background-image: url('../../../assets/images/partners.png');
+  background-size: cover;
+  position: relative;
+  .card__children {
+    height: 100%;
+  }
+}

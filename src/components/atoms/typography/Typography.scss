@@ -1,0 +1,110 @@
+@import '../../../styles/variables';
+
+.typo {
+  font-family: $font-primary;
+  margin: 0;
+}
+
+.typo--h1 {
+  font-size: 48px;
+  font-style: normal;
+  line-height: 50px;
+}
+.typo--h2 {
+  font-size: 40px;
+  font-style: normal;
+  line-height: normal;
+}
+.typo--h3 {
+  font-size: 32px;
+  font-style: normal;
+  line-height: normal;
+}
+.typo--h4 {
+  font-size: 30px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.typo--subtitle {
+  font-size: 20px;
+  font-style: normal;
+  line-height: normal;
+}
+.typo--body {
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+}
+.typo--caption {
+  font-size: 15px;
+  font-style: normal;
+  line-height: normal;
+}
+.typo--overline {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 18px;
+}
+.typo--xsmall {
+  font-size: 12px;
+  font-style: normal;
+  line-height: normal;
+}
+
+// pesos
+
+.typo--w-regular {
+  font-weight: 400;
+}
+.typo--w-medium {
+  font-weight: 500;
+}
+.typo--w-semibold {
+  font-weight: 600;
+}
+.typo--w-bold {
+  font-weight: 700;
+}
+
+// alinhamentos
+
+.typo--align-left {
+  text-align: left;
+}
+.typo--align-center {
+  text-align: center;
+}
+.typo--align-right {
+  text-align: right;
+}
+.typo--align-justify {
+  text-align: justify;
+}
+
+// cores
+
+.typo--color-black {
+  color: $black;
+}
+.typo--color-dark-gray {
+  color: $dark-gray;
+}
+.typo--color-light-gray {
+  color: $light-gray;
+} // ex: primária
+.typo--color-white {
+  color: $white;
+}
+.typo--color-blue {
+  color: $blue;
+}
+.typo--color-purple {
+  color: $purple;
+}
+.typo--color-violet {
+  color: $violet;
+}
+.typo--color-yellow {
+  color: $yellow;
+}
