@@ -56,12 +56,3 @@ npm start
 ```
 O app será aberto em http://localhost:3000 e consumirá a API do json-server na porta 3001.
 
-
-##🧪 Testes
-
-Se houver testes configurados:
-
-```
-npm test
-```
-Executa testes unitários e exibe cobertura.
