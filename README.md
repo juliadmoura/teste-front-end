@@ -52,7 +52,7 @@ A API estará disponível em: <http://localhost:3001>
 ## ⚡ Rodando o Front-end
 
 ```bash
-npm start
+npm run dev
 ```
-O app será aberto em http://localhost:3000 e consumirá a API do json-server na porta 3001.
+O app será aberto em http://localhost:5173/ e consumirá a API do json-server na porta 3001.
 
