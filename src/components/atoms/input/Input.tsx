@@ -4,8 +4,8 @@ import './Input.scss';
 
 type InputProps = InputHTMLAttributes<HTMLInputElement> & {
   color?: 'white' | 'gray';
-  variant?: 'icon' | 'plain' | 'quantity'; // adicionada a variant quantity
-  icon?: ReactNode; // ícone opcional
+  variant?: 'icon' | 'plain' | 'quantity';
+  icon?: ReactNode;
   placeholder?: string;
   value?: number;
   onChangeValue?: (value: number) => void;
