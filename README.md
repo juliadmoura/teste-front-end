@@ -1,6 +1,8 @@
 # 🚀 Teste Econverse
 
-Projeto front-end em **React** com **TypeScript** que consome uma API simulada usando **json-server**.  
+Projeto front-end em **React** com **TypeScript** que consome uma API simulada usando **json-server**. 
+
+**Observações: Não foi aplicado responsividade no projeto, ele foi desenvolvido com base no layout do figma em que a largura era de 1440px.**
 
 ---
 
@@ -33,8 +35,6 @@ Instale as dependências:
 
 ```bash
 npm install
-# ou
-yarn install
 ```
 
 ---
@@ -48,3 +48,20 @@ npx json-server --watch db.json --port 3001
 ```
 
 A API estará disponível em: <http://localhost:3001>
+
+## ⚡ Rodando o Front-end
+
+```bash
+npm start
+```
+O app será aberto em http://localhost:3000 e consumirá a API do json-server na porta 3001.
+
+
+##🧪 Testes
+
+Se houver testes configurados:
+
+```
+npm test
+```
+Executa testes unitários e exibe cobertura.
