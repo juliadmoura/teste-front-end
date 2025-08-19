@@ -3,6 +3,7 @@ import { useProducts } from '../../../hooks/useProducts';
 import { NextIcon, PrevIcon } from '../../atoms/icons';
 import { Typography } from '../../atoms/typography/Typography';
 import { ProductCard } from '../../molecules/cards/productCard/ProductCard';
+import { Modal } from '../../molecules/modal/Modal';
 import { Sections } from '../../molecules/sections/Sections';
 import './Showcase.scss';
 interface ShowcaseProps {
@@ -18,6 +19,20 @@ export function Showcase({
   const carouselRef = useRef<HTMLDivElement>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState<ProductType | null>(
+    null,
+  );
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = (product: ProductType) => {
+    setSelectedProduct(product);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setSelectedProduct(null);
+    setIsModalOpen(false);
+  };
 
   const itemsPerPage = 4;
 
@@ -114,9 +129,15 @@ export function Showcase({
                   description={product.description}
                   id={product.id}
                   title={product.title}
+                  onClick={() => openModal(product)}
                 />
               </div>
             ))}
+            <Modal
+              isOpen={isModalOpen}
+              onClose={closeModal}
+              product={selectedProduct}
+            />
           </div>
         </div>
         <div className="carousel-button next" onClick={nextSlide}>

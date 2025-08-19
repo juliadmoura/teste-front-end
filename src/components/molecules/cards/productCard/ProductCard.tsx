@@ -6,6 +6,7 @@ import './ProductCard.scss';
 
 export type ProductCardProps = Omit<Product, 'description'> & {
   description?: string;
+  onClick?: () => void;
 };
 
 export function ProductCard({
@@ -13,11 +14,12 @@ export function ProductCard({
   description,
   image,
   price,
+  onClick,
 }: ProductCardProps) {
   const { formatCurrency } = useCurrencyFormat();
 
   return (
-    <div className="product-card">
+    <div className="product-card" onClick={onClick}>
       <div className="product-card__image">
         <img src={image} alt={title} />
       </div>

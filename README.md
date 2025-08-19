@@ -33,8 +33,7 @@ Instale as dependências:
 
 ```bash
 npm install
-# ou
-yarn install
+
 ```
 
 ---
