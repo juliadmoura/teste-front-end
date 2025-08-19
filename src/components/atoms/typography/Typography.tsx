@@ -33,6 +33,7 @@ type TypographyProps<T extends keyof JSX.IntrinsicElements = 'span'> =
     align?: Align;
     color?: Colors;
     truncate?: boolean;
+    inline?: boolean;
   };
 
 const defaultTagByVariant: Record<Variants, keyof JSX.IntrinsicElements> = {
@@ -56,6 +57,7 @@ export function Typography<T extends keyof JSX.IntrinsicElements = 'span'>({
   color = 'black',
   truncate = false,
   className = '',
+  inline,
   ...rest
 }: TypographyProps<T>) {
   const Tag = (as ?? defaultTagByVariant[variant]) as any;
@@ -67,6 +69,7 @@ export function Typography<T extends keyof JSX.IntrinsicElements = 'span'>({
     `typo--align-${align}`,
     `typo--color-${color}`,
     truncate ? 'typo--truncate' : '',
+    inline ? 'typo--inline' : '',
     className,
   ]
     .filter(Boolean)

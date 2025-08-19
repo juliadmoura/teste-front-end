@@ -1,0 +1,17 @@
+ul {
+  margin: 0px 80px;
+  display: flex;
+  flex-direction: row;
+  padding: 16px 0px 0px 0px;
+  li {
+    list-style: none;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    border: 1px solid #bdbdbd;
+    background: #fff;
+  }
+}

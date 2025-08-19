@@ -1,0 +1,51 @@
+@import '../../../../styles/variables';
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  background: $white;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  width: 304px;
+  height: 500px;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 278.104px;
+      height: 228px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+
+    .texts {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      flex: 1;
+      padding-top: 8px;
+    }
+
+    .button {
+      display: flex;
+      justify-content: center;
+      margin-top: auto;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 import { Typography } from '../../atoms/typography/Typography';
 import { Card } from '../../molecules/cards/Card';
 import './Categories.scss';
-import { categoriesData } from './CategoriesData';
+import { categoriesData } from './categoriesData';
 
 export function Categories() {
   return (
@@ -20,7 +20,7 @@ export function Categories() {
             <Typography
               variant="overline"
               weight="semibold"
-              color={category.title === 'Tecnologia' ? 'violet' : 'black'}
+              color={category.title === 'Tecnologia' ? 'violet' : 'dark-gray'}
             >
               {category.title}
             </Typography>

@@ -3,6 +3,7 @@
 .typo {
   font-family: $font-primary;
   margin: 0;
+  display: inline-block;
 }
 
 .typo--h1 {
@@ -82,6 +83,9 @@
   text-align: justify;
 }
 
+.typo--inline {
+  display: inline-block;
+}
 // cores
 
 .typo--color-black {
