@@ -4,7 +4,7 @@ import './Sections.scss';
 export function Sections() {
   return (
     <>
-      <ul>
+      <ul className="ul-sections">
         <li>
           <Typography variant="body" color="blue" weight="bold">
             CELULAR

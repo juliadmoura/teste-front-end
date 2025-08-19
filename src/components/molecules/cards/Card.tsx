@@ -4,7 +4,7 @@ import { Typography } from '../../atoms/typography/Typography';
 import './Card.scss';
 
 type CardProps = HTMLAttributes<HTMLDivElement> & {
-  variant?: 'default' | 'banner' | 'categories' | 'partners';
+  variant?: 'default' | 'categories' | 'partners';
   title?: string;
   description?: string;
   image?: string;

@@ -57,11 +57,14 @@ export function Header() {
         </div>
         <section className="menu">
           <img src="/src/assets/logo/logo.png" />
-          <Input
-            variant="icon"
-            placeholder="O que você está buscando?"
-            icon={<Lupa />}
-          ></Input>
+          <div className="menu-input">
+            <Input
+              variant="icon"
+              placeholder="O que você está buscando?"
+              icon={<Lupa />}
+            ></Input>
+          </div>
+
           <ul className="icons-list">
             <li>
               <img src="/src/assets/icons/box.png" alt="" />

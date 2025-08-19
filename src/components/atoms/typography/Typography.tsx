@@ -10,9 +10,10 @@ type Variants =
   | 'body'
   | 'caption'
   | 'overline'
-  | 'xsmall';
+  | 'xsmall'
+  | 'end';
 
-type Weights = 'regular' | 'medium' | 'semibold' | 'bold';
+type Weights = 'regular' | 'medium' | 'semibold' | 'bold' | 'light';
 type Align = 'left' | 'center' | 'right' | 'justify';
 type Colors =
   | 'white'
@@ -22,7 +23,8 @@ type Colors =
   | 'light-gray'
   | 'black'
   | 'violet'
-  | 'yellow';
+  | 'yellow'
+  | 'footer';
 
 type TypographyProps<T extends keyof JSX.IntrinsicElements = 'span'> =
   HTMLAttributes<HTMLElement> & {
@@ -46,6 +48,7 @@ const defaultTagByVariant: Record<Variants, keyof JSX.IntrinsicElements> = {
   caption: 'span',
   overline: 'span',
   xsmall: 'h6',
+  end: 'caption',
 };
 
 export function Typography<T extends keyof JSX.IntrinsicElements = 'span'>({

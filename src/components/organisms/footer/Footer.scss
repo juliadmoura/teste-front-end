@@ -1,0 +1,59 @@
+@import '../../../styles/variables';
+
+.container {
+  height: 282px;
+  padding: 42px 80px;
+  background-color: $bg-card;
+  line-height: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .media {
+    width: 28%;
+    flex-direction: column;
+    line-height: normal;
+    justify-items: center;
+    display: flex;
+    gap: 18px;
+
+    img {
+      width: 164px;
+      height: 48px;
+    }
+    .social {
+      display: flex;
+      gap: 26px;
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  .divider {
+    width: 1px;
+    height: 198px;
+    background: rgba(40, 40, 40, 0.18);
+  }
+
+  .info {
+    display: flex;
+    gap: 100px;
+    .ul-footer {
+      padding: 0px;
+      li {
+        list-style: none;
+        padding: 8px;
+      }
+      #title {
+        padding-bottom: 12px;
+      }
+    }
+  }
+}
+.end {
+  height: 46.842px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

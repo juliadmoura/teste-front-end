@@ -1,7 +1,6 @@
 @import '../../../styles/variables';
 
 .card {
-  border-radius: 12px;
   padding: 16px;
   background: $white;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -13,7 +12,6 @@
 
   &__image img {
     flex-shrink: 0;
-    border-radius: 8px;
     object-fit: cover;
   }
 
@@ -38,7 +36,20 @@
 }
 
 .card--default {
-  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 211px;
+  height: 211px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.13);
+
+  .card__image {
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+  }
 }
 
 .card--banner {

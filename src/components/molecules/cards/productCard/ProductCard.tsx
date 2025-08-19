@@ -23,17 +23,20 @@ export function ProductCard({
       </div>
       <div className="product-card__info">
         <div className="texts">
-          <Typography variant="subtitle" weight="medium" inline>
+          <Typography
+            variant="subtitle"
+            weight="medium"
+            className="product-card__title"
+          >
             {title}
           </Typography>
-          <Typography variant="xsmall" inline>
+          <Typography variant="xsmall" className="product-card__description">
             {description}
           </Typography>
           <Typography variant="h4" weight="bold" color="purple">
             {formatCurrency(price)}
           </Typography>
-          <Typography variant="xsmall" color="blue" weight="regular" inline>
-            {' '}
+          <Typography variant="xsmall" color="blue" weight="regular">
             Frete grátis
           </Typography>
         </div>

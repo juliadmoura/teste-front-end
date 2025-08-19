@@ -32,6 +32,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  .menu-input {
+    width: 630px;
+  }
 }
 
 .categories {

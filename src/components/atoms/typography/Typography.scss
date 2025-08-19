@@ -52,8 +52,15 @@
   font-style: normal;
   line-height: normal;
 }
-
+.typo--end {
+  font-size: 13px;
+  font-style: normal;
+  line-height: normal;
+}
 // pesos
+.typo--w-light {
+  font-weight: 300;
+}
 
 .typo--w-regular {
   font-weight: 400;
@@ -111,4 +118,7 @@
 }
 .typo--color-yellow {
   color: $yellow;
+}
+.typo--color-footer {
+  color: rgba(34, 34, 34, 0.71);
 }
