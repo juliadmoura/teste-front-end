@@ -2,7 +2,10 @@
 
 Projeto front-end em **React** com **TypeScript** que consome uma API simulada usando **json-server**. 
 
+Foi seguida a metodologia **Atomic Design** para organização dos componentes, garantindo maior **reutilização, consistência e manutenção** do código.   
+---
 **Observações: Não foi aplicado responsividade no projeto, ele foi desenvolvido com base no layout do figma em que a largura era de 1440px.**
+
 
 ---
 
